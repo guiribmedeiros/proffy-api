@@ -1,6 +1,3 @@
-<!-- Cover -->
-[![Cover](./.github/assets/logo.svg)](https://nextlevelweek.com)
-
 <!-- Badges -->
 [![100% TypeScript](https://img.shields.io/github/languages/top/guiribmedeiros/proffy-api?style=for-the-badge)](https://github.com/guiribmedeiros/proffy-api/search?l=typescript)
 [![License](https://img.shields.io/github/license/guiribmedeiros/proffy-api?style=for-the-badge)](./LICENSE.md)
