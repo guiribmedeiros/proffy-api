@@ -1,8 +1,7 @@
-import dotenv from 'dotenv';
-
-dotenv.config();
+import 'dotenv/config';
 
 export default {
-    domain: process.env.APP_DOMAIN || 'localhost:8000',
-    protocol: process.env.APP_PROTOCOL || 'http',
+    app_host: process.env.APP_HOST || 'localhost',
+    app_port: process.env.APP_PORT || 8000,
+    app_protocol: process.env.APP_PROTOCOL || 'http',
 }

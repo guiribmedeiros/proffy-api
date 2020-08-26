@@ -1,20 +1,16 @@
 import path from 'path';
-import fs from 'fs';
 
 import config from './config/database';
 
-// Creates the storage directory if doesn't exist
-const dir = path.resolve(__dirname, 'storage');
-
-if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir);
-}
-
 // Configures the database
 module.exports = {
-    client: 'sqlite3',
+    client: config.db_connection,
     connection: {
-        filename: path.resolve(__dirname, 'storage', config.db_database),
+        host: config.db_host,
+        port: config.db_port,
+        database: config.db_database,
+        user: config.db_username,
+        password: config.db_password,
     },
     migrations: {
         directory: path.resolve(__dirname, 'database', 'migrations'),

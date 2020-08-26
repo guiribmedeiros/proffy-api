@@ -29,10 +29,10 @@ class ClassController {
             .whereExists(function () {
                 this.select('class_schedules.*')
                     .from('class_schedules')
-                    .whereRaw('`class_schedules`.`class_id` = `classes`.`id`')
-                    .whereRaw('`class_schedules`.`week_day` = ??', [Number(week_day)])
-                    .whereRaw('`class_schedules`.`from` <= ??', [timeInMinutes])
-                    .whereRaw('`class_schedules`.`to` > ??', [timeInMinutes]);
+                    .whereRaw('class_schedules.class_id = classes.id')
+                    .whereRaw('class_schedules.week_day = ??', [Number(week_day)])
+                    .whereRaw('class_schedules.from <= ??', [timeInMinutes])
+                    .whereRaw('class_schedules.to > ??', [timeInMinutes]);
             })
             .where('classes.subject', '=', subject)
             .join('users', 'classes.user_id', '=', 'users.id')
@@ -47,20 +47,15 @@ class ClassController {
         const transaction = await knex.transaction();
 
         try {
-            const insertedUsersIds = await transaction('users').insert({
-                name,
-                avatar,
-                whatsapp,
-                bio
-            });
+            const insertedUsersIds = await transaction('users')
+                .insert({ name, avatar, whatsapp, bio })
+                .returning('id');
 
             const user_id = insertedUsersIds[0];
 
-            const insertedClassesId = await transaction('classes').insert({
-                subject,
-                cost,
-                user_id
-            });
+            const insertedClassesId = await transaction('classes')
+                .insert({ subject, cost, user_id })
+                .returning('id');
 
             const class_id = insertedClassesId[0];
 

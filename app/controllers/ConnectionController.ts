@@ -4,7 +4,7 @@ import knex from '../../database/knex';
 
 class ConnectionController {
     async index(request: Request, response: Response) {
-        const totalConnections = await knex('connections').count('* as total');
+        const totalConnections = await knex('connections').count('* AS total');
 
         const { total } = totalConnections[0];
 
@@ -14,9 +14,7 @@ class ConnectionController {
     async create(request: Request, response: Response) {
         const { user_id } = request.body;
 
-        await knex('connections').insert({
-            user_id,
-        });
+        await knex('connections').insert({ user_id });
 
         return response.status(201).send();
     };
