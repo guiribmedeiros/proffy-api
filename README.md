@@ -2,6 +2,7 @@
 [![100% TypeScript](https://img.shields.io/github/languages/top/guiribmedeiros/proffy-api?style=for-the-badge)](https://github.com/guiribmedeiros/proffy-api/search?l=typescript)
 [![License](https://img.shields.io/github/license/guiribmedeiros/proffy-api?style=for-the-badge)](./LICENSE.md)
 [![Open Issues](https://img.shields.io/github/issues/guiribmedeiros/proffy-api?style=for-the-badge)](https://github.com/guiribmedeiros/proffy-api/issues)
+[![Run in Insomnia](https://img.shields.io/badge/insomnia-run-blue?style=for-the-badge&logo=insomnia&color=5849be)](https://insomnia.rest/run/?label=Proffy%20API&uri=https%3A%2F%2Fgithub.com%2Fguiribmedeiros%2Fproffy-api%2Fblob%2Fmaster%2F.github%2Fextras%2FInsomnia.json)
 
 ## About Proffy
 
@@ -9,6 +10,8 @@ Proffy is a platform that helps people find teachers for online classes efficien
 
 - [Proffy Mobile](https://github.com/guiribmedeiros/proffy-mobile) 1.0.
 - [Proffy Web](https://github.com/guiribmedeiros/proffy-web) 1.0.
+- The workspace is available through [Insomnia](https://insomnia.rest/run/?label=Proffy%20API&uri=https%3A%2F%2Fgithub.com%2Fguiribmedeiros%2Fproffy-api%2Fblob%2Fmaster%2F.github%2Fextras%2FInsomnia.json).
+- Try it at a [Live Example](http://proffy-api.guiribmedeiros.io).
 
 Proffy API is an open-sourced restful API. It is written in [TypeScript](http://www.typescriptlang.org) and
 uses [Express](https://expressjs.com/) along with [SQLite](https://www.sqlite.org/).
