@@ -4,7 +4,7 @@ import config from './config/database';
 
 // Configures the database
 module.exports = {
-    client: config.db_connection,
+    client: 'pg',
     connection: {
         host: config.db_host,
         port: config.db_port,

@@ -2,7 +2,6 @@ import express from 'express';
 import cors from 'cors';
 
 import routes from '../routes/api';
-import config from '../config/app';
 
 // Creates the application
 const app = express();
@@ -15,4 +14,4 @@ app.use(express.json());
 app.use(routes);
 
 // Binds the application
-app.listen(config.app_port);
+app.listen(process.env.PORT || 8000);
