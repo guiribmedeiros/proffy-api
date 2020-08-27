@@ -12,7 +12,8 @@
     "development:migrate:rollback": "knex migrate:rollback --knexfile build/knexfile.js",
     "migrate": "knex migrate:latest --knexfile knexfile.ts",
     "migrate:rollback": "knex migrate:rollback --knexfile knexfile.ts",
-    "serve": "tsnd --transpile-only --ignore-watch node_modules --respawn bootstrap/app.ts"
+    "serve": "tsnd --transpile-only --ignore-watch node_modules --respawn bootstrap/app.ts",
+    "start": "npm run dev:migrate && npm run dev"
   },
   "license": "MIT",
   "devDependencies": {
