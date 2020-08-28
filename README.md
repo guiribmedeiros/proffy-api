@@ -11,9 +11,9 @@ Proffy is a platform that helps people find teachers for online classes efficien
 - [Proffy Mobile](https://github.com/guiribmedeiros/proffy-mobile) 1.0.
 - [Proffy Web](https://github.com/guiribmedeiros/proffy-web) 1.0.
 - The workspace is available through [Insomnia](https://insomnia.rest/run/?label=Proffy%20API&uri=https%3A%2F%2Fgithub.com%2Fguiribmedeiros%2Fproffy-api%2Fblob%2Fmaster%2F.github%2Fextras%2FInsomnia.json).
-- Try it at a [Live Example](http://proffy-api.guiribmedeiros.io).
+- Try it at a [Live Example](https://proffy-api.guiribmedeiros.io).
 
-Proffy API is an open-sourced restful API. It is written in [TypeScript](http://www.typescriptlang.org) and
+Proffy API is an open-sourced restful API. It is written in [TypeScript](https://www.typescriptlang.org) and
 uses [Express](https://expressjs.com/) along with [SQLite](https://www.sqlite.org/).
 
 ## Getting Started
