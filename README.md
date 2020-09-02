@@ -34,7 +34,7 @@ Once your dependencies are installed, in order to run all Knex.js migrations and
 npm run migrate
 ```
 
-Finally, the `serve` script starts your Node.js "development server" on port 3000.
+Finally, the `serve` script starts your Node.js "development server" on port 8000.
 
 ```
 npm run serve
