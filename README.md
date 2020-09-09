@@ -14,7 +14,7 @@ Proffy is a platform that helps people find teachers for online classes efficien
 - Try it at a [Live Example](https://proffy-api.guiribmedeiros.io).
 
 Proffy API is an open-sourced restful API. It is written in [TypeScript](https://www.typescriptlang.org) and
-uses [Express](https://expressjs.com/) along with [SQLite](https://www.sqlite.org/).
+uses [Express](https://expressjs.com/) along with [PostgreSQL](https://www.postgresql.org).
 
 ## Getting Started
 
